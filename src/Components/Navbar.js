@@ -63,36 +63,31 @@ const NavBar = () => {
                 <Dropdown.Menu>
                   <Dropdown.Item
                     eventKey={1}
-                    style={{ fontSize: "18px" }}
-                    className="nav_bar_font"
+                    className="nav_bar_font dropdown-fontSize"
                   >
                     Guitar
                   </Dropdown.Item>
                   <Dropdown.Item
                     eventKey={2}
-                    style={{ fontSize: "18px" }}
-                    className="nav_bar_font"
+                    className="nav_bar_font dropdown-fontSize"
                   >
                     Organs
                   </Dropdown.Item>
                   <Dropdown.Item
                     eventKey={3}
-                    style={{ fontSize: "18px" }}
-                    className="nav_bar_font"
+                    className="nav_bar_font dropdown-fontSize"
                   >
                     Piano
                   </Dropdown.Item>
                   <Dropdown.Item
                     eventKey={4}
-                    style={{ fontSize: "18px" }}
-                    className="nav_bar_font"
+                    className="nav_bar_font dropdown-fontSize"
                   >
                     Ukulele
                   </Dropdown.Item>
                   <Dropdown.Item
                     eventKey={5}
-                    style={{ fontSize: "18px" }}
-                    className="nav_bar_font"
+                    className="nav_bar_font dropdown-fontSize"
                   >
                     Drum
                   </Dropdown.Item>

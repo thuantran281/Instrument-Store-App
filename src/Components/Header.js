@@ -13,16 +13,16 @@ const Header = () => {
         <Col className="text-center guitar-logo">
           <Link to="/">
             <Image
-              className="title"
+              className="guitar-logo"
               src={guitarIcon}
               alt="guitar"
               fluid
             />
           </Link>
         </Col>
-        <Col xl="auto">
-          <FaCartShopping style={{ fontSize: 23, margin: "0 8px" }} />
-          <BsSearch style={{ fontSize: 23, margin: "0 8px" }} />
+        <Col xl="auto" md="auto" sm="auto">
+          <FaCartShopping className="icon" />
+          <BsSearch className="icon" />
         </Col>
       </Row>
       <Row>
