@@ -1,3 +1,75 @@
+@media (max-width: 576px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .guitar-logo {
+    margin-left: 80px;
+  }
+
+  .title {
+    width: 80px;
+  }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .carousel_image {
+    height: 620px;
+  }
+}
+
+@media (min-width: 1400px) {
+  
+}
+
+.brand_name {
+  font-family: 'Courgette', sans-serif;
+}
+
+.nav_bar_font {
+  font-family: 'Noto Serif', sans-serif;
+}
+
+.product-title {
+  font-family: 'Lobster', sans-serif;
+  font-size: 3.4rem;
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
