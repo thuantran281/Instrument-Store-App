@@ -18,10 +18,12 @@ const NavBar = () => {
   return (
     <>
       <Navbar expand="lg" className="bg-danger-subtle" sticky="top">
-        <Container>
+        <div className="d-xl-flex mx-xl-auto d-lg-flex mx-lg-auto mx-md-4">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto mx-xl-auto mx-xxl-auto d-xl-flex align-items-xl-center">
+            <Nav className="d-xl-flex align-items-xl-center
+            d-lg-flex align-items-lg-center
+            ">
               <Link
                 to="/"
                 className="nav_bar_font hover-underline-animation"
@@ -33,7 +35,7 @@ const NavBar = () => {
               >
                 Home
               </Link>
-              <div className="mx-xl-4"></div>
+              <div className="mx-lg-4 mx-xl-4"></div>
               <Link
                 to="/about"
                 className="nav_bar_font hover-underline-animation"
@@ -45,7 +47,7 @@ const NavBar = () => {
               >
                 About
               </Link>
-              <div className="mx-xl-4"></div>
+              <div className="mx-lg-4 mx-xl-4"></div>
               <Dropdown
                 as={Nav.Item}
                 show={open}
@@ -93,7 +95,7 @@ const NavBar = () => {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <div className="mx-xl-4"></div>
+              <div className="mx-lg-4 mx-xl-4"></div>
               <Link
                 to="/blog"
                 className="nav_bar_font hover-underline-animation"
@@ -105,7 +107,7 @@ const NavBar = () => {
               >
                 Blog
               </Link>
-              <div className="mx-xl-4"></div>
+              <div className="mx-lg-4 mx-xl-4"></div>
               <Link
                 to="/contact"
                 className="nav_bar_font hover-underline-animation"
@@ -117,7 +119,7 @@ const NavBar = () => {
               >
                 Contact
               </Link>
-              <div className="mx-xl-4"></div>
+              <div className="mx-lg-4 mx-xl-4"></div>
               <Link
                 to="/news"
                 className="nav_bar_font hover-underline-animation"
@@ -131,7 +133,7 @@ const NavBar = () => {
               </Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </>
   );

@@ -1,14 +1,24 @@
-@media (max-width: 576px) {}
-
-@media (min-width: 576px) and (max-width: 768px) {
+@media (max-width: 576px) {
   .guitar-logo {
     width: 80px;
-    margin-left: 35px;
+    margin-left: 66px;
   }
 
   .icon {
     font-size: 20px;
-    margin: 0 4px;
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .guitar-logo {
+    width: 80px;
+    margin-left: 61px;
+  }
+
+  .icon {
+    font-size: 20px;
+    margin: 0 5px;
   }
 }
 
@@ -24,36 +34,22 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .guitar-logo {
+    width: 100px;
+    margin-left: 70px;
+  }
+
+  .icon {
+    font-size: 23px;
+    margin: 0 8px;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .guitar-logo {
-    margin-left: 44px;
+    margin-left: 67px;
     width: 80px;
-  }
-
-  .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-  }
-
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
   }
 
   .carousel_image {
@@ -85,6 +81,31 @@
   font-size: 3.4rem;
   text-align: center;
 }
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 body {
   margin: 0;

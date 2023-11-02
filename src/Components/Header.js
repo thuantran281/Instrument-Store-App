@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import guitarIcon from "../Assets/Images/guitar-logo.png";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { FaCartShopping } from "react-icons/fa6";
 import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Container>
+    <div>
       <Row className="d-flex justify-content-between align-items-center">
         <Col className="text-center guitar-logo">
           <Link to="/">
@@ -20,7 +20,7 @@ const Header = () => {
             />
           </Link>
         </Col>
-        <Col xl="auto" md="auto" sm="auto">
+        <Col className="mx-4 mx-sm-4 mx-md-4 mx-lg-4 mx-xl-4 my-xl-4" xs="auto" xl="auto" md="auto" sm="auto">
           <FaCartShopping className="icon" />
           <BsSearch className="icon" />
         </Col>
@@ -33,7 +33,7 @@ const Header = () => {
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>Instrumental Store</Link>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 };
 
