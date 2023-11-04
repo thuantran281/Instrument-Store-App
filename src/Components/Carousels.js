@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Image } from "react-bootstrap";
-import GuitarCarousel1 from "../Assets/Carousel Images/music-guitar-acoustic-guitar-band-black-acoustic-829783-pxhere.com.jpg";
-import GuitarCarousel2 from "../Assets/Carousel Images/free-photo-of-guitarist-playing-acoustic-guitar-with-capo-on-the-fretboard.jpg";
-import GuitarCarousel3 from "../Assets/Carousel Images/pexels-rebecca-swafford-625788.jpg";
+import Carousel1 from "../Assets/Carousel Images/music-guitar-acoustic-guitar-band-black-acoustic-829783-pxhere.com.jpg";
+import Carousel2 from "../Assets/Carousel Images/pexels-photo-1246437.jpeg";
+import Carousel3 from "../Assets/Carousel Images/50981482131_dd59887f02_b.jpg";
 
 const Carousels = () => {
   return (
@@ -10,7 +10,7 @@ const Carousels = () => {
       <Carousel.Item>
         <Image
           className="d-block w-100 carousel_image"
-          src={GuitarCarousel1}
+          src={Carousel1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -21,7 +21,7 @@ const Carousels = () => {
       <Carousel.Item>
         <Image
           className="d-block w-100 carousel_image"
-          src={GuitarCarousel2}
+          src={Carousel2}
           alt="second slide"
         />
         <Carousel.Caption>
@@ -32,7 +32,7 @@ const Carousels = () => {
       <Carousel.Item>
         <Image
           className="d-block w-100 carousel_image"
-          src={GuitarCarousel3}
+          src={Carousel3}
           alt="third slide"
         />
         <Carousel.Caption>
