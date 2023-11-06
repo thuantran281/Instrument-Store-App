@@ -4,9 +4,10 @@ import NavBar from "../../Components/Navbar";
 import Carousels from "../../Components/Carousels";
 import Footer from "../../Components/Footer";
 import ScrollToTop from "../../Components/ScrollToTop";
+import GuitarProduct from "../../Assets/Images/Guitar Products/2019-12-22-00_540.cef335a3cc4d2fe270b9.jpg";
+import PianoProduct from "../../Assets/Images/Piano Products/pexels-photo-164743.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Carousel1 from "../../Assets/Images/Guitar Products/2019-12-22-00_540.cef335a3cc4d2fe270b9.jpg";
 
 const responsive = {
   desktop: {
@@ -26,24 +27,45 @@ const responsive = {
   },
 };
 
-const ProductSliderUrl = [
+const GuitarSliderUrl = [
   {
-    url: Carousel1,
+    url: GuitarProduct,
   },
   {
-    url: Carousel1,
+    url: GuitarProduct,
   },
   {
-    url: Carousel1,
+    url: GuitarProduct,
   },
   {
-    url: Carousel1,
+    url: GuitarProduct,
   },
   {
-    url: Carousel1,
+    url: GuitarProduct,
   },
   {
-    url: Carousel1,
+    url: GuitarProduct,
+  },
+];
+
+const PianoSliderUrl = [
+  {
+    url: PianoProduct,
+  },
+  {
+    url: PianoProduct,
+  },
+  {
+    url: PianoProduct,
+  },
+  {
+    url: PianoProduct,
+  },
+  {
+    url: PianoProduct,
+  },
+  {
+    url: PianoProduct,
   },
 ];
 
@@ -68,10 +90,29 @@ const Home = () => {
           partialVisible={false}
           dotListClass="custom-dot-list-style"
         >
-          {ProductSliderUrl.map((imageUrl, index) => {
+          {GuitarSliderUrl.map((imageUrl, index) => {
             return (
               <div className="slider" key={index}>
                 <img src={imageUrl.url} alt="guitar" />
+              </div>
+            );
+          })}
+        </Carousel>
+        <h3 className="mx-xl-4">Piano</h3>
+        <Carousel
+          responsive={responsive}
+          autoPlay={true}
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+          infinite={true}
+          partialVisible={false}
+          dotListClass="custom-dot-list-style"
+        >
+          {PianoSliderUrl.map((imageUrl, index) => {
+            return (
+              <div className="slider" key={index}>
+                <img src={imageUrl.url} alt="piano" />
               </div>
             );
           })}
