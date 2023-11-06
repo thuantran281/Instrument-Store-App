@@ -8,12 +8,14 @@ import GuitarProduct from "../../Assets/Images/Guitar Products/2019-12-22-00_540
 import PianoProduct from "../../Assets/Images/Piano Products/pexels-photo-164743.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { CgPiano } from "react-icons/cg";
+import { PiGuitarBold } from "react-icons/pi";
 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 4,
-    slidesToSlide: 4, 
+    slidesToSlide: 4,
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
@@ -79,7 +81,10 @@ const Home = () => {
       <h1 className="product-title">Products</h1>
       <ScrollToTop />
       <div>
-        <h3 className="mx-xl-4">Guitar</h3>
+        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center">
+          <PiGuitarBold />
+          Guitar
+        </h3>
         <Carousel
           responsive={responsive}
           autoPlay={true}
@@ -98,7 +103,10 @@ const Home = () => {
             );
           })}
         </Carousel>
-        <h3 className="mx-xl-4">Piano</h3>
+        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center">
+          <CgPiano />
+          Piano
+        </h3>
         <Carousel
           responsive={responsive}
           autoPlay={true}
