@@ -68,7 +68,7 @@
 
 @media (min-width: 1400px) {}
 
-.brand_name {
+.brand_name, .product-carousel-title {
   font-family: 'Courgette', sans-serif;
 }
 

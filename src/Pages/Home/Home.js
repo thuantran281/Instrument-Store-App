@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../../Components/Header";
-import NavBar from "../../Components/Navbar";
 import Carousels from "../../Components/Carousels";
 import Footer from "../../Components/Footer";
+import NavBar from "../../Components/Navbar";
 import ScrollToTop from "../../Components/ScrollToTop";
 import GuitarProduct from "../../Assets/Images/Guitar Products/2019-12-22-00_540.cef335a3cc4d2fe270b9.jpg";
 import PianoProduct from "../../Assets/Images/Piano Products/pexels-photo-164743.jpeg";
@@ -81,9 +81,8 @@ const Home = () => {
       <h1 className="product-title">Products</h1>
       <ScrollToTop />
       <div>
-        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center">
-          <PiGuitarBold />
-          Guitar
+        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
+          <PiGuitarBold /> &nbsp; Guitar
         </h3>
         <Carousel
           responsive={responsive}
@@ -103,9 +102,8 @@ const Home = () => {
             );
           })}
         </Carousel>
-        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center">
-          <CgPiano />
-          Piano
+        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
+          <CgPiano /> &nbsp; Piano
         </h3>
         <Carousel
           responsive={responsive}
