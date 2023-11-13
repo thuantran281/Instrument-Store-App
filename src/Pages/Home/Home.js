@@ -6,6 +6,7 @@ import NavBar from "../../Components/Navbar";
 import ScrollToTop from "../../Components/ScrollToTop";
 import GuitarProduct from "../../Assets/Images/Guitar Products/2019-12-22-00_540.cef335a3cc4d2fe270b9.jpg";
 import PianoProduct from "../../Assets/Images/Piano Products/pexels-photo-164743.jpeg";
+import DrumProduct from "../../Assets/Images/Drum Products/px1566055-image-kwvxvjxm.jpg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { CgPiano } from "react-icons/cg";
@@ -71,6 +72,27 @@ const PianoSliderUrl = [
   },
 ];
 
+const DrumSliderUrl = [
+  {
+    url: DrumProduct,
+  },
+  {
+    url: DrumProduct,
+  },
+  {
+    url: DrumProduct,
+  },
+  {
+    url: DrumProduct,
+  },
+  {
+    url: DrumProduct,
+  },
+  {
+    url: DrumProduct,
+  },
+]
+
 const Home = () => {
   return (
     <>
@@ -116,6 +138,27 @@ const Home = () => {
           dotListClass="custom-dot-list-style"
         >
           {PianoSliderUrl.map((imageUrl, index) => {
+            return (
+              <div className="slider" key={index}>
+                <img src={imageUrl.url} alt="drum" />
+              </div>
+            );
+          })}
+        </Carousel>
+        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
+          <CgPiano /> &nbsp; Piano
+        </h3>
+        <Carousel
+          responsive={responsive}
+          autoPlay={true}
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+          infinite={true}
+          partialVisible={false}
+          dotListClass="custom-dot-list-style"
+        >
+          {DrumSliderUrl.map((imageUrl, index) => {
             return (
               <div className="slider" key={index}>
                 <img src={imageUrl.url} alt="piano" />
