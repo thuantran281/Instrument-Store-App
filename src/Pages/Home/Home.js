@@ -99,11 +99,17 @@ const Home = () => {
       <Header />
       <NavBar />
       <Carousels />
-      <div className="my-xl-4"></div>
+      <div className="my-3 my-sm-3 my-md-3 my-lg-4 my-xl-4"></div>
       <h1 className="product-title">Products</h1>
       <ScrollToTop />
       <div>
-        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
+        <h3 className="
+        mx-4 d-flex align-items-center
+        mx-sm-4 d-sm-flex align-items-sm-center
+        mx-md-4 d-md-flex align-items-md-center
+        mx-lg-4 d-lg-flex align-items-lg-center
+        mx-xl-4 d-xl-flex align-items-xl-center
+        product-carousel-title">
           <PiGuitarBold /> &nbsp; Guitar
         </h3>
         <Carousel
@@ -111,10 +117,8 @@ const Home = () => {
           autoPlay={true}
           swipeable={true}
           draggable={true}
-          showDots={true}
           infinite={true}
           partialVisible={false}
-          dotListClass="custom-dot-list-style"
         >
           {GuitarSliderUrl.map((imageUrl, index) => {
             return (
@@ -124,7 +128,12 @@ const Home = () => {
             );
           })}
         </Carousel>
-        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
+        <h3 className="
+        mx-4 d-flex align-items-center
+        mx-sm-4 d-sm-flex align-items-sm-center
+        mx-md-4 d-md-flex align-items-md-center
+        mx-lg-4 d-lg-flex align-items-lg-center
+        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
           <CgPiano /> &nbsp; Piano
         </h3>
         <Carousel
@@ -132,10 +141,8 @@ const Home = () => {
           autoPlay={true}
           swipeable={true}
           draggable={true}
-          showDots={true}
           infinite={true}
           partialVisible={false}
-          dotListClass="custom-dot-list-style"
         >
           {PianoSliderUrl.map((imageUrl, index) => {
             return (
@@ -145,7 +152,12 @@ const Home = () => {
             );
           })}
         </Carousel>
-        <h3 className="mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
+        <h3 className="
+        mx-4 d-flex align-items-center
+        mx-sm-4 d-sm-flex align-items-sm-center
+        mx-md-4 d-md-flex align-items-md-center
+        mx-lg-4 d-lg-flex align-items-lg-center
+        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
           <CgPiano /> &nbsp; Piano
         </h3>
         <Carousel
@@ -153,10 +165,8 @@ const Home = () => {
           autoPlay={true}
           swipeable={true}
           draggable={true}
-          showDots={true}
           infinite={true}
-          partialVisible={false}
-          dotListClass="custom-dot-list-style"
+          partialVisible={false}          
         >
           {DrumSliderUrl.map((imageUrl, index) => {
             return (

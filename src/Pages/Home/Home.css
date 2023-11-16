@@ -12,6 +12,12 @@
         font-size: 20px;
         margin: 0 5px;
     }
+
+    .product-title {
+        font-family: 'Lobster', sans-serif;
+        font-size: 2.3rem;
+        text-align: center;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -23,6 +29,12 @@
     .icon {
         font-size: 20px;
         margin: 0 5px;
+    }
+
+    .product-title {
+        font-family: 'Lobster', sans-serif;
+        font-size: 2.5rem;
+        text-align: center;
     }
 }
 
@@ -36,6 +48,12 @@
         font-size: 23px;
         margin: 0 8px;
     }
+
+    .product-title {
+        font-family: 'Lobster', sans-serif;
+        font-size: 3rem;
+        text-align: center;
+    }   
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -48,6 +66,12 @@
         font-size: 23px;
         margin: 0 8px;
     }
+
+    .product-title {
+        font-family: 'Lobster', sans-serif;
+        font-size: 3.1rem;
+        text-align: center;
+    }    
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -68,6 +92,12 @@
         font-size: 23px;
         margin: 0 8px;
     }
+
+    .product-title {
+        font-family: 'Lobster', sans-serif;
+        font-size: 3.4rem;
+        text-align: center;
+    }    
 }
 
 @media (min-width: 1400px) {}
@@ -78,12 +108,6 @@
 
 .nav_bar_font {
     font-family: 'Noto Serif', sans-serif;
-}
-
-.product-title {
-    font-family: 'Lobster', sans-serif;
-    font-size: 3.4rem;
-    text-align: center;
 }
 
 .hover-underline-animation {
