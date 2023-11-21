@@ -109,12 +109,14 @@ const Home = () => {
         mx-md-4 d-md-flex align-items-md-center
         mx-lg-4 d-lg-flex align-items-lg-center
         mx-xl-4 d-xl-flex align-items-xl-center
-        product-carousel-title">
+        product-carousel-title"
+        style={{ textDecoration: "underline" }}
+        >
           <PiGuitarBold /> &nbsp; Guitar
         </h3>
         <Carousel
           responsive={responsive}
-          autoPlay={true}
+          autoPlay={false}
           swipeable={true}
           draggable={true}
           infinite={true}
@@ -133,12 +135,13 @@ const Home = () => {
         mx-sm-4 d-sm-flex align-items-sm-center
         mx-md-4 d-md-flex align-items-md-center
         mx-lg-4 d-lg-flex align-items-lg-center
-        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
+        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title"
+        style={{ textDecoration: "underline" }}>
           <CgPiano /> &nbsp; Piano
         </h3>
         <Carousel
           responsive={responsive}
-          autoPlay={true}
+          autoPlay={false}
           swipeable={true}
           draggable={true}
           infinite={true}
@@ -157,12 +160,13 @@ const Home = () => {
         mx-sm-4 d-sm-flex align-items-sm-center
         mx-md-4 d-md-flex align-items-md-center
         mx-lg-4 d-lg-flex align-items-lg-center
-        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title">
-          <CgPiano /> &nbsp; Piano
+        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title fst-italic"
+        style={{ textDecoration: "underline" }}>
+          <CgPiano /> &nbsp; Drum
         </h3>
         <Carousel
           responsive={responsive}
-          autoPlay={true}
+          autoPlay={false}
           swipeable={true}
           draggable={true}
           infinite={true}
