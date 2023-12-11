@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
 import guitarIcon from "../Assets/Images/guitar-logo.png";
 import { Row, Col } from "react-bootstrap";
 import { FaCartShopping } from "react-icons/fa6";
@@ -12,16 +11,27 @@ const Header = () => {
       <Row className="d-flex justify-content-between align-items-center">
         <Col className="text-center guitar-logo">
           <Link to="/">
-            <Image
+            <img
               className="guitar-logo"
               src={guitarIcon}
               alt="guitar"
-              fluid
+              fluid="true"
             />
           </Link>
         </Col>
-        <Col className="mx-4 mx-sm-4 mx-md-4 mx-lg-4 mx-xl-4 my-xl-4" xs="auto" xl="auto" md="auto" sm="auto">
-          <FaCartShopping className="icon" />
+        <Col
+          className="mx-4 mx-sm-4 mx-md-4 mx-lg-4 mx-xl-4 my-xl-4"
+          xs="auto"
+          xl="auto"
+          md="auto"
+          sm="auto"
+        >
+          <Link
+            to="/payment"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <FaCartShopping className="icon" />
+          </Link>
           <BsSearch className="icon" />
         </Col>
       </Row>
@@ -30,7 +40,9 @@ const Header = () => {
           className="text-center brand_name"
           style={{ fontSize: "38px", marginLeft: "10px" }}
         >
-          <Link to="/" style={{ textDecoration: "none", color: "black" }}>Instrumental Store</Link>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            Instrumental Store
+          </Link>
         </Col>
       </Row>
     </div>
