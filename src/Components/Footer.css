@@ -1,6 +1,6 @@
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: rgb(254, 135, 204);
+    color: black;
     padding: 20px;
     text-align: center;
 }
@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* Align items at the top */
 }
 
 .footer-section {
@@ -20,8 +19,7 @@
 }
 
 .footer-section h3 {
-    color: #ffa500;
-    /* Custom color for section headings */
+    color: black;
 }
 
 .footer-section p {
@@ -36,4 +34,21 @@
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+.opening-hours-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.opening-hours-list li {
+    margin-bottom: 10px;
+}
+
+.opening-hours-list span {
+    font-weight: bold;
+    margin-right: 8px;
+    display: inline-block;
+    width: 80px;
+    /* Adjust as needed */
 }
