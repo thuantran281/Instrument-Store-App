@@ -7,10 +7,14 @@ import ScrollToTop from "../../Components/ScrollToTop";
 import GuitarProduct from "../../Assets/Images/Guitar Products/2019-12-22-00_540.cef335a3cc4d2fe270b9.jpg";
 import PianoProduct from "../../Assets/Images/Piano Products/pexels-photo-164743.jpeg";
 import DrumProduct from "../../Assets/Images/Drum Products/px1566055-image-kwvxvjxm.jpg";
+import UkuleleProduct from "../../Assets/Images/Ukulele Products/pexels-photo-4215460.jpeg";
+import OrganProduct from "../../Assets/Images/Organ Products/pexels-photo-164951.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { CgPiano } from "react-icons/cg";
 import { PiGuitarBold } from "react-icons/pi";
+import { FaDrum } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const responsive = {
   desktop: {
@@ -31,67 +35,102 @@ const responsive = {
 };
 
 const GuitarSliderUrl = [
-  {
-    url: GuitarProduct,
-  },
-  {
-    url: GuitarProduct,
-  },
-  {
-    url: GuitarProduct,
-  },
-  {
-    url: GuitarProduct,
-  },
-  {
-    url: GuitarProduct,
-  },
-  {
-    url: GuitarProduct,
-  },
+  { url: GuitarProduct },
+  { url: GuitarProduct },
+  { url: GuitarProduct },
+  { url: GuitarProduct },
+  { url: GuitarProduct },
+  { url: GuitarProduct },
 ];
 
 const PianoSliderUrl = [
-  {
-    url: PianoProduct,
-  },
-  {
-    url: PianoProduct,
-  },
-  {
-    url: PianoProduct,
-  },
-  {
-    url: PianoProduct,
-  },
-  {
-    url: PianoProduct,
-  },
-  {
-    url: PianoProduct,
-  },
+  { url: PianoProduct },
+  { url: PianoProduct },
+  { url: PianoProduct },
+  { url: PianoProduct },
+  { url: PianoProduct },
+  { url: PianoProduct },
 ];
 
 const DrumSliderUrl = [
-  {
-    url: DrumProduct,
+  { url: DrumProduct },
+  { url: DrumProduct },
+  { url: DrumProduct },
+  { url: DrumProduct },
+  { url: DrumProduct },
+  { url: DrumProduct },
+];
+
+const OrganSliderUrl = [
+  { url: OrganProduct },
+  { url: OrganProduct },
+  { url: OrganProduct },
+  { url: OrganProduct },
+  { url: OrganProduct },
+  { url: OrganProduct },
+];
+
+const UkuleleSliderUrl = [
+  { url: UkuleleProduct },
+  { url: UkuleleProduct },
+  { url: UkuleleProduct },
+  { url: UkuleleProduct },
+  { url: UkuleleProduct },
+  { url: UkuleleProduct },
+];
+
+const slideUrlsMap = {
+  Guitar: {
+    slideUrls: GuitarSliderUrl,
+    icon: <PiGuitarBold />,
   },
-  {
-    url: DrumProduct,
+  Ukulele: {
+    slideUrls: UkuleleSliderUrl,
+    icon: <PiGuitarBold />,
   },
-  {
-    url: DrumProduct,
+  Piano: {
+    slideUrls: PianoSliderUrl,
+    icon: <CgPiano />,
   },
-  {
-    url: DrumProduct,
+  Organ: {
+    slideUrls: OrganSliderUrl,
+    icon: <CgPiano />, 
   },
-  {
-    url: DrumProduct,
+  Drum: {
+    slideUrls: DrumSliderUrl,
+    icon: <FaDrum />,
   },
-  {
-    url: DrumProduct,
-  },
-]
+};
+
+const ProductCarousel = ({ title, slideUrls, linkTo, icon }) => (
+  <div>
+    <h3
+      className="mx-4 d-flex align-items-center product-carousel-title"
+      style={{ textDecoration: "underline" }}
+    >
+      <span style={{ marginRight: "8px" }}>{icon}</span>
+      <Link to={linkTo} style={{ color: "black", textDecoration: "none" }}>
+        {title}
+      </Link>
+    </h3>
+    <Carousel
+      responsive={responsive}
+      autoPlay={false}
+      swipeable={true}
+      draggable={true}
+      infinite={true}
+      partialVisible={false}
+    >
+      {slideUrls.map((imageUrl, index) => (
+        <Link to={linkTo} key={index}>
+          <div className="slider">
+            <img src={imageUrl.url} alt={title} />
+          </div>
+        </Link>
+      ))}
+    </Carousel>
+  </div>
+);
 
 const Home = () => {
   return (
@@ -102,85 +141,15 @@ const Home = () => {
       <div className="my-3 my-sm-3 my-md-3 my-lg-4 my-xl-4"></div>
       <h1 className="product-title">Products</h1>
       <ScrollToTop />
-      <div>
-        <h3 className="
-        mx-4 d-flex align-items-center
-        mx-sm-4 d-sm-flex align-items-sm-center
-        mx-md-4 d-md-flex align-items-md-center
-        mx-lg-4 d-lg-flex align-items-lg-center
-        mx-xl-4 d-xl-flex align-items-xl-center
-        product-carousel-title"
-        style={{ textDecoration: "underline" }}
-        >
-          <PiGuitarBold /> &nbsp; Guitar
-        </h3>
-        <Carousel
-          responsive={responsive}
-          autoPlay={false}
-          swipeable={true}
-          draggable={true}
-          infinite={true}
-          partialVisible={false}
-        >
-          {GuitarSliderUrl.map((imageUrl, index) => {
-            return (
-              <div className="slider" key={index}>
-                <img src={imageUrl.url} alt="guitar" />
-              </div>
-            );
-          })}
-        </Carousel>
-        <h3 className="
-        mx-4 d-flex align-items-center
-        mx-sm-4 d-sm-flex align-items-sm-center
-        mx-md-4 d-md-flex align-items-md-center
-        mx-lg-4 d-lg-flex align-items-lg-center
-        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title"
-        style={{ textDecoration: "underline" }}>
-          <CgPiano /> &nbsp; Piano
-        </h3>
-        <Carousel
-          responsive={responsive}
-          autoPlay={false}
-          swipeable={true}
-          draggable={true}
-          infinite={true}
-          partialVisible={false}
-        >
-          {PianoSliderUrl.map((imageUrl, index) => {
-            return (
-              <div className="slider" key={index}>
-                <img src={imageUrl.url} alt="drum" />
-              </div>
-            );
-          })}
-        </Carousel>
-        <h3 className="
-        mx-4 d-flex align-items-center
-        mx-sm-4 d-sm-flex align-items-sm-center
-        mx-md-4 d-md-flex align-items-md-center
-        mx-lg-4 d-lg-flex align-items-lg-center
-        mx-xl-4 d-xl-flex align-items-xl-center product-carousel-title fst-italic"
-        style={{ textDecoration: "underline" }}>
-          <CgPiano /> &nbsp; Drum
-        </h3>
-        <Carousel
-          responsive={responsive}
-          autoPlay={false}
-          swipeable={true}
-          draggable={true}
-          infinite={true}
-          partialVisible={false}          
-        >
-          {DrumSliderUrl.map((imageUrl, index) => {
-            return (
-              <div className="slider" key={index}>
-                <img src={imageUrl.url} alt="piano" />
-              </div>
-            );
-          })}
-        </Carousel>
-      </div>
+      {Object.entries(slideUrlsMap).map(([category, { slideUrls, icon }]) => (
+        <ProductCarousel
+          key={category}
+          title={category}
+          slideUrls={slideUrls}
+          icon={icon}
+          linkTo={`/products/${category.toLowerCase()}`}
+        />
+      ))}
       <Footer />
     </>
   );
