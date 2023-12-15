@@ -69,30 +69,35 @@ const NavBar = () => {
                   <Link
                     to="/products/guitar"
                     className="nav_bar_font dropdown-fontSize"
+                    style={{ textDecoration: "none "}}
                   >
                     <Dropdown.Item as="div" eventKey={1}>Guitar</Dropdown.Item>
                   </Link>
                   <Link
                     to="/products/organ"
                     className="nav_bar_font dropdown-fontSize"
+                    style={{ textDecoration: "none "}}
                   >
                     <Dropdown.Item as="div" eventKey={2}>Organ</Dropdown.Item>
                   </Link>
                   <Link
                     to="/products/piano"
                     className="nav_bar_font dropdown-fontSize"
+                    style={{ textDecoration: "none "}}
                   >
                     <Dropdown.Item as="div" eventKey={3}>Piano</Dropdown.Item>
                   </Link>
                   <Link
                     to="/products/ukulele"
                     className="nav_bar_font dropdown-fontSize"
+                    style={{ textDecoration: "none "}}
                   >
                     <Dropdown.Item as="div" eventKey={4}>Ukulele</Dropdown.Item>
                   </Link>
                   <Link
                     to="/products/drum"
                     className="nav_bar_font dropdown-fontSize"
+                    style={{ textDecoration: "none "}}
                   >
                     <Dropdown.Item as="div" eventKey={5}>Drum</Dropdown.Item>
                   </Link>
