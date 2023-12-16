@@ -10,7 +10,7 @@ import Organ from "./Pages/Products/Organ/Organ";
 import Drum from "./Pages/Products/Drum/Drum";
 import Piano from "./Pages/Products/Piano/Piano";
 import Ukulele from "./Pages/Products/Ukulele/Ukulele";
-import Payment from "./Pages/Payment/Payment";
+import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/products/drum" Component={Drum}/>
           <Route path="/products/organ" Component={Organ}/>
           <Route path="/products/ukulele" Component={Ukulele}/>
-          <Route path="/payment" exact Component={Payment}/>
+          <Route path="/shoppingcart" exact Component={ShoppingCart}/>
           <Route path="/blog" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
