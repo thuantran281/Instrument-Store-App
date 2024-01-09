@@ -5,8 +5,6 @@ import Footer from "../../Components/Footer";
 import "./News.css";
 import axios from "axios";
 
-// api key for news "3e74e29cbe794f04910adbb1199319f4"
-
 const News = () => {
   const [news, setNews] = useState([]);
   const apiKey = "3e74e29cbe794f04910adbb1199319f4";
@@ -31,7 +29,15 @@ const News = () => {
     <>
       <Header />
       <Navbar />
-      <h3>This is News page</h3>
+      <ul>
+        {news.map((article) => (
+          <li key={article.url}>
+            <b>{article.title}</b>
+            <p>{article.description}</p>
+            {/* <p>{article.content}</p> */}
+          </li>
+        ))}
+      </ul>
       <Footer />
     </>
   );
