@@ -1,23 +1,23 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 
 const capitaliseFirstLetter = (s) => {
-    return s.charAt(0).toUpperCase() + s.slice(1);
-}
+  return s.charAt(0).toUpperCase() + s.slice(1);
+};
 
 const Post = ({ title, body, date }) => {
   return (
-    <>
-      <div className="mb-4">
-        <div className="alert alert-info d-flex flex-column">
-          <div className="text-center fw-bold">{capitaliseFirstLetter(title)}</div>
-          <br />
-          <p>{body}</p>
-          <small style={{ width: "100%" }} className="text-right text-accept">
-            {date}
-          </small>
-        </div>
-      </div>
-    </>
+    <Card className="mb-4 h-90">
+      <Card.Body>
+        <Card.Title className="text-center fw-bold">
+          {capitaliseFirstLetter(title)}
+        </Card.Title>
+        <Card.Text>{body}</Card.Text>
+        <Card.Footer className="text-right text-accept">
+          <small>{date}</small>
+        </Card.Footer>
+      </Card.Body>
+    </Card>
   );
 };
 

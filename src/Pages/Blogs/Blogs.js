@@ -4,13 +4,12 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Post from "./BlogPost/Post";
 import axios from "axios";
-// import { Button, Card } from "react-bootstrap";
-// import guitarPhoto from "../../Assets/Images/28694736822_e6c1b710a6_b.jpg";
+import { Container, Row, Col } from "react-bootstrap";
 import "../Blogs/Blogs.css";
 
 const Blogs = () => {
   const [posts, setPosts] = useState([]);
-
+  
   useEffect(() => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
@@ -24,19 +23,20 @@ const Blogs = () => {
     <>
       <Header />
       <Navbar />
-      <div className="container">
+      <Container className="h-100">
         <div className="text-center my-xl-3">Blog Posts</div>
-        <ul>
+        <Row>
           {posts.map((post) => (
-            <Post
-              key={post.id}
-              title={post.title}
-              body={post.body}
-              date={new Date().toDateString()}
-            />
+            <Col key={post.id} md={4}>
+              <Post
+                title={post.title}
+                body={post.body}
+                date={new Date().toDateString()}
+              />
+            </Col>
           ))}
-        </ul>
-      </div>
+        </Row>
+      </Container>
       <Footer />
     </>
   );
