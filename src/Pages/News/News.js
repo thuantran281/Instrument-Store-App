@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import "./News.css";
 import axios from "axios";
+import "./News.css";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -29,15 +29,17 @@ const News = () => {
     <>
       <Header />
       <Navbar />
-      <ul>
+      <div className="news-container">
         {news.map((article) => (
-          <li key={article.url}>
-            <b>{article.title}</b>
-            <p>{article.description}</p>
-            {/* <p>{article.content}</p> */}
-          </li>
+          <div key={article.url} className="news-card card-width">
+            <img src={article.urlToImage} alt={article.title} className="card-image" />
+            <div className="card-content">
+              <h3 className="card-title">{article.title}</h3>
+              <p className="card-description">{article.description}</p>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
       <Footer />
     </>
   );
