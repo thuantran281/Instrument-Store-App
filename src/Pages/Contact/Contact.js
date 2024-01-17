@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../../Components/Header";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import "./Contact.css"
+import "./Contact.css";
 import axios from "axios";
 
 const Contact = () => {
@@ -50,8 +50,8 @@ const Contact = () => {
               onChange={(e) => setSelectedCountry(e.target.value)}
             >
               <option value="">Choose...</option>
-              {countries.map((country) => (
-                <option key={country.alpha3Code} value={country.alpha2Code}>
+              {countries.map((country, index) => (
+                <option key={index} value={country.alpha2Code}>
                   {country.name.common}
                 </option>
               ))}
