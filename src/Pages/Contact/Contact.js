@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../../Components/Header";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import { Form, Button } from "react-bootstrap";
+import "./Contact.css"
 import axios from "axios";
 
 const Contact = () => {
@@ -26,44 +26,50 @@ const Contact = () => {
     <>
       <Header />
       <Navbar />
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formCountry">
-          <Form.Label>Select Country</Form.Label>
-          <Form.Select
-            aria-label="Select Country"
-            value={selectedCountry}
-            onChange={(e) => setSelectedCountry(e.target.value)}
-          >
-            <option value="">Choose...</option>
-            {countries.map((country) => (
-              <option key={country.alpha3Code} value={country.alpha2Code}>
-                {country.name.common}
-              </option>
-            ))}
-          </Form.Select>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+      <div className="container">
+        <form action="" method="GET">
+          <div className="form-group mb-3">
+            <label htmlFor="fname">First name</label>
+            <input type="text" name="fname" id="fname" />
+          </div>
+          <div className="form-group mb-3">
+            <label htmlFor="lname">Last name</label>
+            <input type="text" name="lname" id="lname" />
+          </div>
+          <div className="form-group mb-3">
+            <label htmlFor="emailAddress">Email address: </label>
+            <input type="text" id="emailAddress" name="emailAddress" />
+          </div>
+          <div className="form-group mb-3">
+            <label htmlFor="country">Country</label>
+            <select
+              name="country"
+              id="country"
+              aria-label="select country"
+              value={selectedCountry}
+              onChange={(e) => setSelectedCountry(e.target.value)}
+            >
+              <option value="">Choose...</option>
+              {countries.map((country) => (
+                <option key={country.alpha3Code} value={country.alpha2Code}>
+                  {country.name.common}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="form-group mb-3">
+            <label htmlFor="subject">Subject</label>
+            <textarea
+              name="subject"
+              id="subject"
+              style={{ height: "200px " }}
+            ></textarea>
+          </div>
+          <button type="submit" className="text-center">
+            Submit
+          </button>
+        </form>
+      </div>
       <Footer />
     </>
   );
