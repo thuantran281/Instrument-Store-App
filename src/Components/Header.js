@@ -27,7 +27,7 @@ const Header = () => {
           sm="auto"
         >
           <Link
-            to="/payment"
+            to="/shopping-cart"
             style={{ textDecoration: "none", color: "black" }}
           >
             <FaCartShopping className="icon" />
