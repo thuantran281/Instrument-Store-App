@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif&display=swap');
+
 .footer {
-    background-color: rgb(254, 135, 204);
+    background-color: rgb(246, 183, 248);
     color: black;
     padding: 20px;
     text-align: center;
@@ -11,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    font-family: 'Noto Serif', sans-serif;
 }
 
 .footer-section {
@@ -50,5 +53,29 @@
     margin-right: 8px;
     display: inline-block;
     width: 80px;
-    /* Adjust as needed */
+}
+
+@media (max-width: 576px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
