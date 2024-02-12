@@ -18,18 +18,18 @@ const NavBar = () => {
   return (
     <>
       <Navbar expand="lg" className="bg-danger-subtle">
-        <div className="d-xl-flex mx-xl-auto d-lg-flex mx-lg-auto mx-md-4 mx-sm-4 mx-4">
+        <div className="d-xl-flex mx-xl-auto d-lg-flex mx-lg-auto mx-md-4 mx-sm-4 mx-3">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav
               className="d-xl-flex align-items-xl-center
             d-lg-flex align-items-lg-center
-            my-sm-2 my-xl-0 my-lg-0
+            my-2 my-sm-2 my-xl-0 my-lg-0
             "
             >
               <Link
                 to="/"
-                className="nav_bar_font hover-underline-animation"
+                className="nav_bar_font hover-underline-animation mx-md-1 mx-sm-1 mx-1"
                 style={{
                   fontSize: "23px",
                   textDecoration: "none",
@@ -38,10 +38,10 @@ const NavBar = () => {
               >
                 Home
               </Link>
-              <div className="my-sm-1 my-xl-0 mx-lg-4 mx-xl-4"></div>
+              <div className="my-1 my-sm-1 my-xl-0 mx-lg-4 mx-xl-4"></div>
               <Link
                 to="/about"
-                className="nav_bar_font hover-underline-animation"
+                className="nav_bar_font hover-underline-animation mx-md-1 mx-sm-1 mx-1"
                 style={{
                   fontSize: "23px",
                   textDecoration: "none",
@@ -59,7 +59,7 @@ const NavBar = () => {
               >
                 <Dropdown.Toggle
                   as={Nav.Link}
-                  className="nav_bar_font"
+                  className="nav_bar_font mx-md-1 mx-sm-1 mx-1"
                   id="product-dropdown"
                   style={{ fontSize: "22px", color: "black" }}
                 >
@@ -106,7 +106,7 @@ const NavBar = () => {
               <div className="my-xl-0 mx-lg-4 mx-xl-4"></div>
               <Link
                 to="/blog"
-                className="nav_bar_font hover-underline-animation"
+                className="nav_bar_font hover-underline-animation mx-md-1 mx-sm-1 mx-1"
                 style={{
                   fontSize: "23px",
                   textDecoration: "none",
@@ -115,10 +115,10 @@ const NavBar = () => {
               >
                 Blog
               </Link>
-              <div className="my-sm-1 my-xl-0 mx-lg-4 mx-xl-4"></div>
+              <div className="my-sm-1 my-xl-0 mx-lg-4 mx-xl-4 my-1"></div>
               <Link
                 to="/contact"
-                className="nav_bar_font hover-underline-animation"
+                className="nav_bar_font hover-underline-animation mx-md-1 mx-sm-1 mx-1"
                 style={{
                   fontSize: "23px",
                   textDecoration: "none",
@@ -127,10 +127,10 @@ const NavBar = () => {
               >
                 Contact
               </Link>
-              <div className="my-sm-1 my-xl-0 mx-lg-4 mx-xl-4"></div>
+              <div className="my-sm-1 my-xl-0 mx-lg-4 mx-xl-4 my-1"></div>
               <Link
                 to="/news"
-                className="nav_bar_font hover-underline-animation"
+                className="nav_bar_font hover-underline-animation mx-md-1 mx-sm-1 mx-1"
                 style={{
                   fontSize: "23px",
                   textDecoration: "none",
