@@ -10,12 +10,10 @@ const About = () => {
     <>
       <Header />
       <Navbar />
-      <h3 className="text-center my-xl-3">About Us</h3>
-      <div className="d-xl-flex">
-        <div>
-          <img src={MusicShop} alt="music store" width={510} height={350}/>
-        </div>
-        <div>Our music shop...</div>
+      <h3 className="text-center my-xl-4">About Us</h3>
+      <div className="d-md-flex d-lg-flex d-xl-flex mb-xl-4">
+        <img src={MusicShop} alt="music store" className="image"/>
+        <div className="description">Our music shop...</div>
       </div>
       <Footer />
     </>

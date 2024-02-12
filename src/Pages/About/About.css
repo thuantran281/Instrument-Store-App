@@ -1,0 +1,28 @@
+@media (max-width: 576px) {}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .image {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .image {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image {
+        width: 48%;
+    }
+
+    .description {
+        margin-left: 20px;
+    }
+}
