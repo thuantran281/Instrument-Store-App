@@ -1,5 +1,4 @@
 import React from "react";
-// import guitarIcon from "../Assets/Images/guitar-logo.png";
 import {
   BsTelephone,
   BsEnvelope,
@@ -50,7 +49,7 @@ const Footer = () => {
                 <BsTiktok style={{ fontSize: "20px", color: "black" }} />
               </a>
             </div>
-            <div className="my-xl-3">
+            <div className="my-2 my-sm-2 my-md-2 my-xl-2">
               <a
                 href="mailto: abc123@hotmail.com"
                 style={{ textDecoration: "none", color: "black" }}
@@ -58,6 +57,7 @@ const Footer = () => {
                 <BsEnvelope />
                 &nbsp; abc123@hotmail.com <br />
               </a>
+              <div className="my-1 my-md-1 my-sm-1"></div>
               &nbsp;
               <a
                 href="tel: +12345678901"
@@ -66,6 +66,7 @@ const Footer = () => {
                 &nbsp;
                 <BsTelephone /> +12345678901 <br />
               </a>
+              <div className="my-1 my-md-1 my-sm-1"></div>
               <div>
                 <BsFillPinMapFill />
                 &nbsp; Vidnasinkatu 2, 67100 Kokkola
@@ -74,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <h3>Opening Hours</h3>
-            <ul className="opening-hours-list">
+            <ul className="opening-hours-list my-xl-3">
               <li>
                 <span>Monday:</span> 9:00 AM - 6:00 PM
               </li>
@@ -84,7 +85,6 @@ const Footer = () => {
               <li>
                 <span>Wednesday:</span> 9:00 AM - 6:00 PM
               </li>
-              {/* Add other days as needed */}
             </ul>
           </div>
           <div className="footer-section">
