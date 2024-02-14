@@ -11,6 +11,7 @@ import Drum from "./Pages/Products/Drum/Drum";
 import Piano from "./Pages/Products/Piano/Piano";
 import Ukulele from "./Pages/Products/Ukulele/Ukulele";
 import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
+import NotFound from "./Pages/Not Found/NotFound";
 
 const App = () => {
   return (
@@ -18,16 +19,17 @@ const App = () => {
       <Routes>
         <Route>
           <Route index element={<Home />} />
-          <Route path="/products/guitar" exact Component={Guitar}/>
-          <Route path="/products/piano" Component={Piano}/>
-          <Route path="/products/drum" Component={Drum}/>
-          <Route path="/products/organ" Component={Organ}/>
-          <Route path="/products/ukulele" Component={Ukulele}/>
-          <Route path="/shopping-cart" exact Component={ShoppingCart}/>
+          <Route path="/products/guitar" exact Component={Guitar} />
+          <Route path="/products/piano" Component={Piano} />
+          <Route path="/products/drum" Component={Drum} />
+          <Route path="/products/organ" Component={Organ} />
+          <Route path="/products/ukulele" Component={Ukulele} />
+          <Route path="/shopping-cart" exact Component={ShoppingCart} />
           <Route path="/blog" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/news" element={<News />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
