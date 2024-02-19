@@ -1,4 +1,4 @@
-import GuitarProduct1 from "../Assets/Images/Guitar Products/3200347113_ba1ee60c8c_b.jpg";
+import GuitarProduct from "../Assets/Images/Guitar Products/3200347113_ba1ee60c8c_b.jpg";
 import PianoProduct from "../Assets/Images/Piano Products/5909364909_7157f522bb_b.jpg";
 import UkuleleProduct from "../Assets/Images/Ukulele Products/Ortega_Soprano_Ukulele_Zebrawood_Natural_-_RFU10ZE,_with_Magnesium_Top_Spinning_(2017-04-08_14.56.05_by_Johannes_Weber).jpg";
 import OrganProduct from "../Assets/Images/Organ Products/Yamaha_Tyros5_and_WERSI_digital_organ_(2016-11-02_by_Der_Wersianer).jpg";
@@ -16,7 +16,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
         {
           id: 102,
@@ -24,7 +24,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
         {
           id: 103,
@@ -32,7 +32,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
         {
           id: 104,
@@ -40,7 +40,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
         {
           id: 105,
@@ -48,7 +48,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
         {
           id: 106,
@@ -56,7 +56,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
         {
           id: 107,
@@ -64,7 +64,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
         {
           id: 108,
@@ -72,7 +72,7 @@ const Products = {
           brand: "Suzuki",
           price: 200.0,
           description: "something goes here",
-          image: GuitarProduct1,
+          image: GuitarProduct,
         },
       ],
     },
