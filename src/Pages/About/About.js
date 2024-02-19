@@ -11,9 +11,11 @@ const About = () => {
       <Header />
       <Navbar />
       <h3 className="text-center my-3 my-sm-3 my-md-4 my-lg-4 my-xl-4">About Us</h3>
-      <div className="d-md-flex d-lg-flex d-xl-flex my-lg-3 mb-xl-4">
+      <div className="d-md-flex d-lg-flex d-xl-flex my-lg-3 mb-4 mb-sm-4 mb-md-4 mb-lg-4 mb-xl-4">
         <img src={MusicShop} alt="music store" className="image"/>
-        <div className="description">Description of the music shop goes here...</div>
+        <div className="description">
+          Description of the music shop goes here...
+        </div>
       </div>
       <Footer />
     </>

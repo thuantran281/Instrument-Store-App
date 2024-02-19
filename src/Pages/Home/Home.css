@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 
 @media (max-width: 576px) {
     .guitar-logo {
@@ -53,7 +54,7 @@
         font-family: 'Lobster', sans-serif;
         font-size: 3rem;
         text-align: center;
-    }   
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -71,10 +72,10 @@
         font-family: 'Lobster', sans-serif;
         font-size: 3.1rem;
         text-align: center;
-    }    
+    }
 }
 
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1200px) {
     .guitar-logo {
         margin-left: 67px;
         width: 80px;
@@ -97,13 +98,15 @@
         font-family: 'Lobster', sans-serif;
         font-size: 3.4rem;
         text-align: center;
-    }    
+    }
 }
 
-@media (min-width: 1400px) {}
-
-.brand_name, .product-carousel-title {
+.brand_name {
     font-family: 'Courgette', sans-serif;
+}
+
+.product-carousel-title {
+    font-family: 'Lobster Two', sans-serif;
 }
 
 .nav_bar_font {

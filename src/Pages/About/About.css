@@ -13,17 +13,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    .image {
-        width: 48%;
-    }
-
-    .description {
-        margin-left: 20px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .image {
         width: 48%;
     }

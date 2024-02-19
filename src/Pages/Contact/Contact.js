@@ -26,22 +26,27 @@ const Contact = () => {
     <>
       <Header />
       <Navbar />
-      <div className="container">
-        <form action="" method="GET">
+      <div className="container my-3 my-sm-3 my-md-4 my-lg-4 my-xl-4">
+        <h3 className="text-center">Contact Us</h3>
+        <form action="" method="GET" className="my-xl-3">
           <div className="form-group mb-3">
             <label htmlFor="fname">First name</label>
+            <div className="my-xl-2"></div>
             <input type="text" name="fname" id="fname" />
           </div>
           <div className="form-group mb-3">
             <label htmlFor="lname">Last name</label>
+            <div className="my-xl-2"></div>
             <input type="text" name="lname" id="lname" />
           </div>
           <div className="form-group mb-3">
-            <label htmlFor="emailAddress">Email address: </label>
+            <label htmlFor="emailAddress">Email address</label>
+            <div className="my-xl-2"></div>
             <input type="text" id="emailAddress" name="emailAddress" />
           </div>
           <div className="form-group mb-3">
             <label htmlFor="country">Country</label>
+            <div className="my-xl-2"></div>
             <select
               name="country"
               id="country"
@@ -57,15 +62,16 @@ const Contact = () => {
               ))}
             </select>
           </div>
-          <div className="form-group mb-3">
+          <div className="form-group mb-3 my-xl-4">
             <label htmlFor="subject">Subject</label>
+            <div className="my-2 my-sm-2 my-md-2 my-lg-2 my-xl-2"></div>
             <textarea
               name="subject"
               id="subject"
-              style={{ height: "200px " }}
+              style={{ height: "200px" }}
             ></textarea>
           </div>
-          <button type="submit" className="text-center">
+          <button type="submit" className="button">
             Submit
           </button>
         </form>

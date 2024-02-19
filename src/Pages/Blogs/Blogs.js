@@ -24,7 +24,7 @@ const Blogs = () => {
       <Header />
       <Navbar />
       <Container className="h-100">
-        <div className="text-center my-xl-3">Blog Posts</div>
+        <h3 className="text-center my-3 my-sm-3 my-md-3 my-lg-3 my-xl-3">Blog Posts</h3>
         <Row>
           {posts.map((post) => (
             <Col key={post.id} md={4}>
