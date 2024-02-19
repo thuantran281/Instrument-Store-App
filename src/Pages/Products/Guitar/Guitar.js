@@ -17,14 +17,13 @@ const Guitar = () => {
         <h2 className="text-center my-xl-3">Guitar Products</h2>
         <div className="d-flex flex-wrap justify-content-around">
         {guitarProduct.map((item) => (
-          <div className="card" key={item.id} style={{ width: "18rem" }}>
+          <div className="card" key={item.id} style={{ width: "17rem" }}>
             <div className="card-body">
-              <img src={item.image} alt={item.name} className="card-img-top" />
+              <img src={item.image} alt={item.name} className="card-img-top w-100" />
               <div className="card-text">
-                <h2>{item.name}</h2>
+                <h4 className="my-xl-2">{item.name}</h4>
                 <p>{item.brand}</p>
                 <p>{item.price.toFixed(2)}</p>
-                <p>{item.description}</p>
               </div>
             </div>
           </div>

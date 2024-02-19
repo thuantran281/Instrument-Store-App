@@ -5,30 +5,34 @@ import Footer from "../../../Components/Footer";
 import Data from "../../../data/Data";
 
 const Ukulele = () => {
-
   const ukuleleProduct = Data.instruments.find(
     (item) => item.category === "Ukulele"
   ).products;
-  
+
   return (
     <>
       <Header />
       <NavBar />
-      <div className="ukulele-page-container">
+      <div className="container">
         <h2 className="text-center my-xl-3">Ukulele Products</h2>
-        {ukuleleProduct.map((item) => (
-          <div className="card" key={item.id}>
-            <div className="card-img">
-              <img src={item.image} alt={item.name} />
+        <div className="d-flex flex-wrap justify-content-around">
+          {ukuleleProduct.map((item) => (
+            <div className="card" key={item.id} style={{ width: "17rem" }}>
+              <div className="card-body">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="card-img-top w-100"
+                />
+                <div className="card-text">
+                  <h4 className="my-xl-2">{item.name}</h4>
+                  <p>{item.brand}</p>
+                  <p>{item.price.toFixed(2)}</p>
+                </div>
+              </div>
             </div>
-            <div className="card-body">
-              <h2>{item.name}</h2>
-              <p>{item.brand}</p>
-              <p>{item.price.toFixed(2)}</p>
-              <p>{item.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <Footer />
     </>
