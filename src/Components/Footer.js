@@ -11,6 +11,9 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const embedUrl =
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.6052939583033!2d23.160211398837042!3d63.83535085362831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468126b531fdf675%3A0xa87b11624314522e!2sCentria%20ammattikorkeakoulu%20Ltd!5e0!3m2!1sen!2sfi!4v1710020417632!5m2!1sen!2sfi";
+
   return (
     <>
       <footer className="footer">
@@ -89,7 +92,15 @@ const Footer = () => {
           </div>
           <div className="footer-section">
             <h3>Find us</h3>
-            <p>Content for section 3 goes here.</p>
+            <div className="map-responsive">
+              <iframe
+                src={embedUrl}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="musicalInstrumentStoreLocation"
+              />
+            </div>
           </div>
         </div>
       </footer>
