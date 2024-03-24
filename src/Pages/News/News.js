@@ -11,13 +11,14 @@ const redirectUrl = (url) => {
 
 const News = () => {
   const [news, setNews] = useState([]);
-  const apiKey = "3e74e29cbe794f04910adbb1199319f4";
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
+  const apiUrl = process.env.REACT_APP_NEWS_BASE_URL;
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`
+          `${apiUrl}&apiKey=${apiKey}`
         );
 
         setNews(response.data.articles);
@@ -27,7 +28,7 @@ const News = () => {
     };
 
     fetchNews();
-  }, [apiKey]);
+  }, [apiKey, apiUrl]);
 
   return (
     <>
