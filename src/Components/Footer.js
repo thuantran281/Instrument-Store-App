@@ -72,7 +72,7 @@ const Footer = () => {
               <div className="my-1 my-md-1 my-sm-1"></div>
               <div>
                 <BsFillPinMapFill />
-                &nbsp; Vidnasinkatu 2, 67100 Kokkola
+                &nbsp; Talonpojankatu 2A, 67100 Kokkola
               </div>
             </div>
           </div>
