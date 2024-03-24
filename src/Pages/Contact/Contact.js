@@ -8,6 +8,21 @@ import axios from "axios";
 const Contact = () => {
   const [countries, setCountries] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState("");
+  const [formData, setFormData] = useState({
+    fname: "",
+    lname: "",
+    emailAddress: "",
+    subject: "",
+  });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  }
 
   useEffect(() => {
     const fetchCountries = async () => {
@@ -28,21 +43,21 @@ const Contact = () => {
       <Navbar />
       <div className="container my-3 my-sm-3 my-md-4 my-lg-4 my-xl-4">
         <h3 className="text-center">Contact Us</h3>
-        <form action="" method="GET" className="my-xl-3">
+        <form className="my-xl-3" onSubmit={handleSubmit}>
           <div className="form-group mb-3">
             <label htmlFor="fname">First name</label>
             <div className="my-xl-2"></div>
-            <input type="text" name="fname" id="fname" />
+            <input type="text" name="fname" value={formData.fname} onChange={handleInputChange} id="fname" />
           </div>
           <div className="form-group mb-3">
             <label htmlFor="lname">Last name</label>
             <div className="my-xl-2"></div>
-            <input type="text" name="lname" id="lname" />
+            <input type="text" name="lname" value={formData.lname} onChange={handleInputChange} id="lname" />
           </div>
           <div className="form-group mb-3">
             <label htmlFor="emailAddress">Email address</label>
             <div className="my-xl-2"></div>
-            <input type="text" id="emailAddress" name="emailAddress" />
+            <input type="text" id="emailAddress" value={formData.emailAddress} onChange={(handleInputChange)} name="emailAddress" />
           </div>
           <div className="form-group mb-3">
             <label htmlFor="country">Country</label>
@@ -69,9 +84,11 @@ const Contact = () => {
               name="subject"
               id="subject"
               style={{ height: "200px" }}
+              value={formData.subject}
+              onChange={handleInputChange}
             ></textarea>
           </div>
-          <button type="submit" className="button">
+          <button type="submit" className="btn btn-success">
             Submit
           </button>
         </form>
