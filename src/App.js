@@ -12,6 +12,7 @@ import Piano from "./Pages/Products/Piano/Piano";
 import Ukulele from "./Pages/Products/Ukulele/Ukulele";
 import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
 import NotFound from "./Pages/Not Found/NotFound";
+import ProductDetail from "./Pages/Products/Product Detail/ProductDetail";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/news" element={<News />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/products/:category/:productId" element={<ProductDetail />} />
         </Route>
       </Routes>
     </>
