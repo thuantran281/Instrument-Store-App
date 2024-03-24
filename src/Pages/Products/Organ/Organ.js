@@ -18,7 +18,11 @@ const Organ = () => {
         <h2 className="text-center my-xl-3">Organ Products</h2>
         <div className="d-flex flex-wrap justify-content-around">
           {organProduct.map((item) => (
-            <Link to={`products/organ/${item.id}`} key={item.id} className="text-decoration-none">
+            <Link
+              to={`/products/organ/${item.id}`}
+              key={item.id}
+              className="text-decoration-none"
+            >
               <div className="card" style={{ width: "17rem" }}>
                 <div className="card-body">
                   <img
