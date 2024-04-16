@@ -17,9 +17,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get(
-          `${apiUrl}&apiKey=${apiKey}`
-        );
+        const response = await axios.get(`${apiUrl}&apiKey=${apiKey}`);
 
         setNews(response.data.articles);
       } catch (error) {

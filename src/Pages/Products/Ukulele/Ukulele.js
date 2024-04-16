@@ -15,15 +15,15 @@ const Ukulele = () => {
       <Header />
       <NavBar />
       <div className="container">
-        <h2 className="text-center my-xl-3">Ukulele Products</h2>
+        <h2 className="text-center my-xl-3">Organ Products</h2>
         <div className="d-flex flex-wrap justify-content-around">
           {ukuleleProduct.map((item) => (
             <Link
-              to={`products/ukulele/${item.id}`}
+              to={`/products/ukulele/${item.id}`}
               key={item.id}
               className="text-decoration-none"
             >
-              <div className="card" key={item.id} style={{ width: "17rem" }}>
+              <div className="card" style={{ width: "17rem" }}>
                 <div className="card-body">
                   <img
                     src={item.image}

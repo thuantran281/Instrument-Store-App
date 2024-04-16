@@ -5,7 +5,7 @@ import Footer from "../../Components/Footer";
 import Post from "./BlogPost/Post";
 import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
-import "../Blogs/Blogs.css";
+import "./Blogs.css";
 
 const Blogs = () => {
   const [posts, setPosts] = useState([]);
@@ -24,7 +24,7 @@ const Blogs = () => {
       <Header />
       <Navbar />
       <Container className="h-100">
-        <h3 className="text-center my-3 my-sm-3 my-md-3 my-lg-3 my-xl-3">Blog Posts</h3>
+        <h3 className="text-center title my-3 my-sm-3 my-md-3 my-lg-3 my-xl-4">Blog Posts</h3>
         <Row>
           {posts.map((post) => (
             <Col key={post.id} md={4}>

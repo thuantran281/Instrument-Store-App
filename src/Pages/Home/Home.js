@@ -140,7 +140,6 @@ const Home = () => {
       <Carousels />
       <div className="my-3 my-sm-3 my-md-3 my-lg-4 my-xl-4"></div>
       <h1 className="product-title">Products</h1>
-      <ScrollToTop />
       {Object.entries(slideUrlsMap).map(([category, { slideUrls, icon }]) => (
         <ProductCarousel
           key={category}
@@ -150,6 +149,7 @@ const Home = () => {
           linkTo={`/products/${category.toLowerCase()}`}
         />
       ))}
+      <ScrollToTop />
       <Footer />
     </>
   );

@@ -42,7 +42,7 @@ const Contact = () => {
       <Header />
       <Navbar />
       <div className="container my-3 my-sm-3 my-md-4 my-lg-4 my-xl-4">
-        <h3 className="text-center">Contact Us</h3>
+        <h3 className="text-center title">Contact Us</h3>
         <form className="my-xl-3" onSubmit={handleSubmit}>
           <div className="form-group mb-3">
             <label htmlFor="fname">First name</label>
