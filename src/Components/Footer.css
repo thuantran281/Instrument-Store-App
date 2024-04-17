@@ -55,7 +55,7 @@
     width: 80px;
 }
 
-.map-responsive {
+/* .map-responsive {
     overflow: hidden;
     padding-bottom: 56.25%;
     position: relative;
@@ -69,7 +69,7 @@
     height: 100%;
     width: 100%;
     position: absolute;
-}
+} */
 
 @media (max-width: 576px) {
     .footer-content {
