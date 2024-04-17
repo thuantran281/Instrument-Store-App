@@ -6,7 +6,7 @@
 @media (max-width: 576px) {
     .guitar-logo {
         width: 80px;
-        margin-left: 66px;
+        margin-left: 40px;
     }
 
     .icon {
@@ -24,7 +24,7 @@
 @media (min-width: 576px) and (max-width: 768px) {
     .guitar-logo {
         width: 80px;
-        margin-left: 61px;
+        margin-left: 40px;
     }
 
     .icon {
@@ -42,7 +42,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .guitar-logo {
         width: 100px;
-        margin-left: 70px;
+        margin-left: 50px;
     }
 
     .icon {
@@ -60,7 +60,7 @@
 @media (min-width: 992px) and (max-width: 1200px) {
     .guitar-logo {
         width: 100px;
-        margin-left: 70px;
+        margin-left: 50px;
     }
 
     .icon {
@@ -77,7 +77,7 @@
 
 @media (min-width: 1200px) {
     .guitar-logo {
-        margin-left: 67px;
+        margin-left: 50px;
         width: 80px;
     }
 
@@ -91,7 +91,7 @@
 
     .icon {
         font-size: 23px;
-        margin: 0 8px;
+        margin: 0 11px;
     }
 
     .product-title {
