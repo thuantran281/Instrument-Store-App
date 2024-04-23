@@ -64,7 +64,6 @@ export const Cart = ({ children }) => {
         cartItems,
         addToCart,
         removeFromCart,
-        clearCart,
         getCartTotal,
       }}
     >
