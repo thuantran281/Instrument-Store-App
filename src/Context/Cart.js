@@ -39,11 +39,6 @@ export const Cart = ({ children }) => {
       setCartItems(updatedCartItems);
     }
   };
-  
-
-  const clearCart = () => {
-    setCartItems([]);
-  };
 
   const getCartTotal = () => {
     return cartItems.reduce(
