@@ -1,9 +1,7 @@
 import React from "react";
-import Header from "../../../Components/Header";
-import NavBar from "../../../Components/Navbar";
-import Footer from "../../../Components/Footer";
 import Data from "../../../data/Data";
 import { Link } from "react-router-dom";
+import Layouts from "../../Layouts";
 
 const Piano = () => {
   const pianoProduct = Data.instruments.find(
@@ -12,8 +10,7 @@ const Piano = () => {
 
   return (
     <>
-      <Header />
-      <NavBar />
+      <Layouts>
       <div className="container">
         <h2 className="text-center my-xl-3">Piano Products</h2>
         <div className="d-flex flex-wrap justify-content-around">
@@ -41,7 +38,7 @@ const Piano = () => {
           ))}
         </div>
       </div>
-      <Footer />
+      </Layouts>
     </>
   );
 };

@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../Context/Cart";
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
-import NavBar from "../../Components/Navbar";
+import Layouts from "../Layouts";
 import Button from "react-bootstrap/Button";
 import "./ProductDetail.css";
 import Data from "../../data/Data";
@@ -56,35 +54,37 @@ const ProductDetail = () => {
 
   return (
     <>
-      <Header />
-      <NavBar />
-      <div className="container d-flex align-items-center justify-content-center">
-        {product ? (
-          <div className="product-detail-card">
-            <div className="product-detail-image">
-              <img src={product.image} alt={product.name} />
-            </div>
-            <div className="product-detail-info">
-              <h2>{product.name}</h2>
-              <p>Brand: {product.brand}</p>
-              <p>Price: ${product.price.toFixed(2)}</p>
-              <p>Description: {product.description}</p>
-              <div className="quantity-control">
-                <button onClick={handleDecrease}>-</button>
-                <span>{quantity}</span>
-                <button onClick={handleIncrease}>+</button>
+      <Layouts>
+        <div className="container d-flex align-items-center justify-content-center">
+          {product ? (
+            <div className="product-detail-card">
+              <div className="product-detail-image">
+                <img src={product.image} alt={product.name} />
               </div>
-              <p>Total Price: ${totalPrice.toFixed(2)}</p>
-              <Button className="add-to-cart-button" onClick={handleAddToCart}>
-                Add to Cart
-              </Button>
+              <div className="product-detail-info">
+                <h2>{product.name}</h2>
+                <p>Brand: {product.brand}</p>
+                <p>Price: ${product.price.toFixed(2)}</p>
+                <p>Description: {product.description}</p>
+                <div className="quantity-control">
+                  <button onClick={handleDecrease}>-</button>
+                  <span>{quantity}</span>
+                  <button onClick={handleIncrease}>+</button>
+                </div>
+                <p>Total Price: ${totalPrice.toFixed(2)}</p>
+                <Button
+                  className="add-to-cart-button"
+                  onClick={handleAddToCart}
+                >
+                  Add to Cart
+                </Button>
+              </div>
             </div>
-          </div>
-        ) : (
-          <h4>Product Not Found!</h4>
-        )}
-      </div>
-      <Footer />
+          ) : (
+            <h4>Product Not Found!</h4>
+          )}
+        </div>
+      </Layouts>
       <ModalBox
         message="Product has been added to the cart!"
         showModal={showModal}
