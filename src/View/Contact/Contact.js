@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Contact.css";
 import axios from "axios";
 import Layouts from "../Layouts";
+import { userSchema } from "../../Validation/FormValidation";
 
 const Contact = () => {
   const [countries, setCountries] = useState([]);
@@ -11,10 +12,35 @@ const Contact = () => {
     lname: "",
     emailAddress: "",
     subject: "",
+    country: "",
   });
 
-  const handleSubmit = (event) => {
+  const formSubmission = async (event) => {
     event.preventDefault();
+    let formData = {
+      fname: event.target[0].value,
+      lname: event.target[1].value,
+      emailAddress: event.target[2].value,
+      subject: event.target[3].value,
+      country: event.target[4].value,
+    };
+
+    const isValid = await userSchema.isValid(formData);
+    console.log(isValid);
+
+    if (isValid) {
+      setFormData({
+        fname: "",
+        lname: "",
+        emailAddress: "",
+        subject: "",
+        country: "",
+      });
+      setSelectedCountry("");
+      console.log("Form submitted!");
+    } else {
+      console.log("An error has occurred. Try again!");
+    }
   };
 
   const handleInputChange = (event) => {
@@ -40,7 +66,7 @@ const Contact = () => {
       <Layouts>
         <div className="container my-3 my-sm-3 my-md-4 my-lg-4 my-xl-4">
           <h3 className="text-center title">Contact Us</h3>
-          <form className="my-xl-3" onSubmit={handleSubmit}>
+          <form className="my-xl-3" action="#" onSubmit={formSubmission}>
             <div className="form-group mb-3">
               <label htmlFor="fname">First name</label>
               <div className="my-xl-2"></div>
