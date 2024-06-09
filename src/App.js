@@ -1,18 +1,18 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
-import Blogs from "./Pages/Blogs/Blogs";
-import Contact from "./Pages/Contact/Contact";
-import News from "./Pages/News/News";
-import Guitar from "./Pages/Products/Guitar/Guitar";
-import Organ from "./Pages/Products/Organ/Organ";
-import Drum from "./Pages/Products/Drum/Drum";
-import Piano from "./Pages/Products/Piano/Piano";
-import Ukulele from "./Pages/Products/Ukulele/Ukulele";
-import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
-import NotFound from "./Pages/Not Found/NotFound";
-import ProductDetail from "./Pages/Product Detail/ProductDetail";
+import Home from "./View/Home/Home";
+import About from "./View/About/About";
+import Blogs from "./View/Blogs/Blogs";
+import Contact from "./View/Contact/Contact";
+import News from "./View/News/News";
+import Guitar from "./View/Products/Guitar/Guitar";
+import Organ from "./View/Products/Organ/Organ";
+import Drum from "./View/Products/Drum/Drum";
+import Piano from "./View/Products/Piano/Piano";
+import Ukulele from "./View/Products/Ukulele/Ukulele";
+import ShoppingCart from "./View/ShoppingCart/ShoppingCart";
+import NotFound from "./View/Not Found/NotFound";
+import ProductDetail from "./View/Product Detail/ProductDetail";
 
 const App = () => {
   return (

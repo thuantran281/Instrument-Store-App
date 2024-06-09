@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar, Dropdown } from "react-bootstrap";
 import { useState } from "react";
-import "../Pages/Home/Home.css";
+import "../View/Home/Home.css";
 import { Link } from "react-router-dom";
 
 const products = [

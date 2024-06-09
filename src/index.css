@@ -1,7 +1,7 @@
-@import url("./Pages/Home/Home.css");
-@import url("./Pages/About/About.css");
-@import url("./Pages/Contact/Contact.css");
-@import url("./Pages/News/News.css");
+@import url("./View/Home/Home.css");
+@import url("./View/About/About.css");
+@import url("./View/Contact/Contact.css");
+@import url("./View/News/News.css");
 
 body {
   margin: 0;
